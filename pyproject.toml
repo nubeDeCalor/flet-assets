@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "flet-assets"
-version = "0.1.1"
+version = "0.2.0"
 authors = [
   { name = "Julian Perez", email = "mordecaaii@gmail.com" },
 ]
@@ -19,6 +19,7 @@ classifiers = [
 dependencies = [
     "fastapi>=0.68.0",
     "uvicorn>=0.15.0",
+    "colorama>=0.4.4",
 ]
 
 [project.urls]
