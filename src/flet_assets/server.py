@@ -6,7 +6,7 @@ import socket
 from threading import Thread
 
 
-class StaticServer:
+class AssetsServer:
     def __init__(
         self, directory: str = "app/src/assets", mount_path: str = "/", port: int = 1111
     ):
@@ -50,5 +50,5 @@ class StaticServer:
         server = uvicorn.Server(config)
         Thread(target=server.run, daemon=True).start()
 
-        print(f"\Files Server mount on: {self.assets}")
+        print(f"Files Server mount on: {self.assets}")
         print(f"Files From: {self.directory}\n")
