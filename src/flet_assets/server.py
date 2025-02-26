@@ -48,7 +48,7 @@ class AssetsServer:
 
     def __init__(
         self, 
-        directory: str = "app/src/assets", 
+        directory: str = "/", 
         mount_path: str = "/", 
         port: int = 1111,
         verbose: bool = True
@@ -58,7 +58,7 @@ class AssetsServer:
         
         Args:
             directory (str): Path to the directory containing static files.
-                Defaults to "app/src/assets".
+                Defaults to "/" (root path, but you can give .../assets).
             mount_path (str): URL path where static files will be mounted.
                 Defaults to "/" (root path).
             port (int): Port number to use for the server.
