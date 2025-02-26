@@ -11,7 +11,7 @@ setup(
     description="A simple static file server for Flet apps, perfect for mobile debugging.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tu-usuario/flet-staticserver",  # URL del repositorio
+    url="https://github.com/nubeDeCalor/flet-staticserver",  # URL del repositorio
     packages=find_packages(),
     install_requires=[
         "fastapi",
